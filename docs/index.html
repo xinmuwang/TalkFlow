@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TalkFlow</title>
+  <meta name="description"
+        content="TalkFlow: Structured Latent Flow Matching for Speech-Driven Holistic Motion Generation">
+  <meta name="keywords"
+        content="TalkFlow, holistic motion generation, co-speech gesture generation, flow matching, SMPL-X">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       Hero
+       Replace the author / affiliation placeholders before release.
+       ============================================================ -->
+  <header class="hero">
+    <div class="shell hero-inner">
+
+      <p class="venue">SIGGRAPH Asia 2026</p>
+
+      <h1>TalkFlow</h1>
+
+      <h2>
+        Structured Latent Flow Matching for
+        <span>Speech-Driven Holistic Motion Generation</span>
+      </h2>
+
+      <p class="authors">
+        Author One · Author Two · Author Three
+      </p>
+
+      <p class="affiliation">
+        Institution / University
+      </p>
+
+      <!-- Replace # links after the corresponding resources are public. -->
+      <nav class="resource-links" aria-label="Project resources">
+        <a class="button active" href="paper.pdf">Paper</a>
+        <a class="button disabled" href="#" aria-disabled="true">arXiv · Coming Soon</a>
+        <a class="button disabled" href="#" aria-disabled="true">Code · Coming Soon</a>
+        <a class="button disabled" href="#" aria-disabled="true">Weights · Coming Soon</a>
+        <a class="button" href="#videos">Videos</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================================
+         Teaser
+         ============================================================ -->
+    <section class="section">
+      <div class="shell wide">
+        <figure class="teaser-card">
+          <img src="teaser.png"
+               alt="TalkFlow overview"
+               class="teaser">
+          <figcaption>
+            TalkFlow learns continuous upper-body, lower-body, and expression
+            streams and generates coordinated holistic motion with
+            speech-conditioned latent flow matching.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         Abstract
+         ============================================================ -->
+    <section class="section soft">
+      <div class="shell text-width">
+        <h3>Abstract</h3>
+
+        <p>
+          Holistic co-speech motion generation aims to synthesize coordinated
+          facial expressions, hand gestures, and body movements from speech,
+          which is challenging due to heterogeneous part-specific dynamics,
+          long-range temporal coherence, and cross-part coordination.
+          Directly modeling high-dimensional motion can be unstable, while
+          overly compact or unstructured latent spaces may lose fine-grained
+          motion details.
+        </p>
+
+        <p>
+          We present <strong>TalkFlow</strong>, a structured latent flow
+          framework for speech-driven holistic motion generation. TalkFlow
+          learns a continuous three-stream latent representation for upper-body
+          motion, lower-body motion, and facial expressions, preserving
+          part-specific dynamics without forcing heterogeneous motion
+          components into a single latent space. Lightweight cross-stream
+          interactions maintain holistic coordination during both latent
+          representation learning and flow-based generation.
+        </p>
+
+        <p>
+          Conditioned on multi-level speech features, TalkFlow performs
+          speech-conditioned latent flow matching and learns a continuous
+          transport process from source latents to realistic motion latents.
+          Experiments on BEAT2 demonstrate strong facial fidelity, competitive
+          body-motion quality, and effective speech-motion synchronization.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         Highlights
+         ============================================================ -->
+    <section class="section">
+      <div class="shell">
+        <h3>Highlights</h3>
+
+        <div class="grid three">
+          <article class="card">
+            <div class="accent blue"></div>
+            <h4>Structured latent space</h4>
+            <p>
+              A continuous three-stream representation separately models
+              upper-body, lower-body, and expression dynamics.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="accent orange"></div>
+            <h4>Holistic coordination</h4>
+            <p>
+              Lightweight FiLM-gated interactions coordinate heterogeneous
+              motion streams while preserving part-specific behavior.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="accent green"></div>
+            <h4>Latent flow matching</h4>
+            <p>
+              Branch-specific speech conditions guide efficient continuous
+              transport in the learned motion latent space.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         Video results
+         Replace each placeholder with a <video> block after release.
+         ============================================================ -->
+    <section class="section soft" id="videos">
+      <div class="shell">
+        <h3>Video Results</h3>
+
+        <p class="section-intro">
+          Video results will be released with the public project page.
+          We plan to include benchmark comparisons, in-the-wild speech,
+          long-sequence generation, and samples generated from different
+          Gaussian source latents.
+        </p>
+
+        <div class="grid two">
+          <article class="video-placeholder">
+            <span>BEAT2 qualitative comparison</span>
+            <small>Coming soon</small>
+          </article>
+
+          <article class="video-placeholder">
+            <span>In-the-wild speech</span>
+            <small>Coming soon</small>
+          </article>
+
+          <article class="video-placeholder">
+            <span>Long-sequence stitching</span>
+            <small>Coming soon</small>
+          </article>
+
+          <article class="video-placeholder">
+            <span>Different source latents</span>
+            <small>Coming soon</small>
+          </article>
+        </div>
+
+        <!-- Example for later:
+        <video controls playsinline preload="metadata">
+          <source src="assets/in_the_wild.mp4" type="video/mp4">
+        </video>
+        -->
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         Resources
+         ============================================================ -->
+    <section class="section">
+      <div class="shell text-width">
+        <h3>Resources</h3>
+
+        <div class="resource-list">
+          <div>
+            <strong>Paper</strong>
+            <span>Place the final PDF next to index.html as paper.pdf.</span>
+          </div>
+          <div>
+            <strong>arXiv</strong>
+            <span>Replace the placeholder URL after the arXiv page is public.</span>
+          </div>
+          <div>
+            <strong>Code &amp; weights</strong>
+            <span>Link the GitHub repository and model download after release.</span>
+          </div>
+          <div>
+            <strong>Videos</strong>
+            <span>Add benchmark, in-the-wild, and long-sequence results here.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         Citation
+         Replace with the official proceedings metadata once available.
+         ============================================================ -->
+    <section class="section dark-section">
+      <div class="shell text-width">
+        <h3>Citation</h3>
+        <pre><code>@inproceedings{talkflow2026,
+  title     = {TalkFlow: Structured Latent Flow Matching for
+               Speech-Driven Holistic Motion Generation},
+  author    = {Author One and Author Two and Author Three},
+  booktitle = {ACM SIGGRAPH Asia Conference Papers},
+  year      = {2026}
+}</code></pre>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="shell">
+      <p>
+        TalkFlow · Speech-Driven Holistic Motion Generation
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
