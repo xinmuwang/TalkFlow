@@ -376,6 +376,8 @@ footer p {
 .video-gallery {
   display: grid;
   gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .video-card {
   min-width: 0;
