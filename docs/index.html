@@ -152,47 +152,113 @@
 
 
     <!-- ============================================================
-         Video results
-         Replace each placeholder with a <video> block after release.
+         Qualitative video comparisons (method names are in the MP4s)
          ============================================================ -->
     <section class="section soft" id="videos">
-      <div class="shell">
-        <h3>Video Results</h3>
-
+      <div class="shell wide">
+        <h3>Qualitative Comparisons</h3>
         <p class="section-intro">
-          Video results will be released with the public project page.
-          We plan to include benchmark comparisons, in-the-wild speech,
-          long-sequence generation, and samples generated from different
-          Gaussian source latents.
+          Five complete BEAT2 test sequences comparing holistic co-speech
+          motion generation. Each video retains its original method labels,
+          side-by-side layout, and speech audio. For the clearest view of
+          expressions and gestures, open a video at full resolution.
         </p>
-
-        <div class="grid two">
-          <article class="video-placeholder">
-            <span>BEAT2 qualitative comparison</span>
-            <small>Coming soon</small>
+        <div class="video-gallery">
+          <article class="video-card">
+            <div class="video-card-header">
+              <h4>Example 01</h4>
+              <span>1:06 · BEAT2</span>
+            </div>
+            <video class="comparison-video"
+                   controls playsinline preload="metadata"
+                   width="3600" height="1080"
+                   aria-label="TalkFlow qualitative comparison, example 01">
+              <source src="assets/videos/2_scott_0_3_3.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-card-footer">
+              <span>Test sequence 3</span>
+              <a href="assets/videos/2_scott_0_3_3.mp4"
+                 target="_blank" rel="noopener noreferrer">View full resolution ↗</a>
+            </div>
           </article>
 
-          <article class="video-placeholder">
-            <span>In-the-wild speech</span>
-            <small>Coming soon</small>
+          <article class="video-card">
+            <div class="video-card-header">
+              <h4>Example 02</h4>
+              <span>1:14 · BEAT2</span>
+            </div>
+            <video class="comparison-video"
+                   controls playsinline preload="metadata"
+                   width="3600" height="1080"
+                   aria-label="TalkFlow qualitative comparison, example 02">
+              <source src="assets/videos/2_scott_0_5_5.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-card-footer">
+              <span>Test sequence 5</span>
+              <a href="assets/videos/2_scott_0_5_5.mp4"
+                 target="_blank" rel="noopener noreferrer">View full resolution ↗</a>
+            </div>
           </article>
 
-          <article class="video-placeholder">
-            <span>Long-sequence stitching</span>
-            <small>Coming soon</small>
+          <article class="video-card">
+            <div class="video-card-header">
+              <h4>Example 03</h4>
+              <span>0:50 · BEAT2</span>
+            </div>
+            <video class="comparison-video"
+                   controls playsinline preload="metadata"
+                   width="3600" height="1080"
+                   aria-label="TalkFlow qualitative comparison, example 03">
+              <source src="assets/videos/2_scott_0_65_65.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-card-footer">
+              <span>Test sequence 65</span>
+              <a href="assets/videos/2_scott_0_65_65.mp4"
+                 target="_blank" rel="noopener noreferrer">View full resolution ↗</a>
+            </div>
           </article>
 
-          <article class="video-placeholder">
-            <span>Different source latents</span>
-            <small>Coming soon</small>
+          <article class="video-card">
+            <div class="video-card-header">
+              <h4>Example 04</h4>
+              <span>0:54 · BEAT2</span>
+            </div>
+            <video class="comparison-video"
+                   controls playsinline preload="metadata"
+                   width="3600" height="1080"
+                   aria-label="TalkFlow qualitative comparison, example 04">
+              <source src="assets/videos/2_scott_0_103_103.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-card-footer">
+              <span>Test sequence 103</span>
+              <a href="assets/videos/2_scott_0_103_103.mp4"
+                 target="_blank" rel="noopener noreferrer">View full resolution ↗</a>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-card-header">
+              <h4>Example 05</h4>
+              <span>0:58 · BEAT2</span>
+            </div>
+            <video class="comparison-video"
+                   controls playsinline preload="metadata"
+                   width="3600" height="1080"
+                   aria-label="TalkFlow qualitative comparison, example 05">
+              <source src="assets/videos/2_scott_0_111_111.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-card-footer">
+              <span>Test sequence 111</span>
+              <a href="assets/videos/2_scott_0_111_111.mp4"
+                 target="_blank" rel="noopener noreferrer">View full resolution ↗</a>
+            </div>
           </article>
         </div>
-
-        <!-- Example for later:
-        <video controls playsinline preload="metadata">
-          <source src="assets/in_the_wild.mp4" type="video/mp4">
-        </video>
-        -->
       </div>
     </section>
 
@@ -219,7 +285,7 @@
           </div>
           <div>
             <strong>Videos</strong>
-            <span>Add benchmark, in-the-wild, and long-sequence results here.</span>
+            <span>Explore five full-length <a href="#videos">BEAT2 qualitative comparisons</a>.</span>
           </div>
         </div>
       </div>
