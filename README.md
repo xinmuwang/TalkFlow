@@ -3,15 +3,21 @@
 **TalkFlow: Structured Latent Flow Matching for Speech Driven Holistic Motion Generation**  
 *SIGGRAPH Asia 2026 Conference Papers*
 
-[Project Page](https://xinmuwang.github.io/TalkFlow/) · [Paper](https://doi.org/10.1145/3829340.3842366)
+[Project Page](https://xinmuwang.github.io/TalkFlow/) · [Paper (PDF)](https://xinmuwang.github.io/TalkFlow/assets/TalkFlow_SIGGRAPH_Asia_2026.pdf) · [Video Comparisons](https://xinmuwang.github.io/TalkFlow/#videos)
 
 TalkFlow generates coordinated body motion, hand gestures, and facial expressions from speech. This repository provides the implementation for BEAT2 data preparation, model training, motion reconstruction evaluation, and inference.
+
+## Paper
+
+The SIGGRAPH Asia 2026 conference paper is embedded directly on the [project page](https://xinmuwang.github.io/TalkFlow/#paper) and can be opened or downloaded as a PDF. The publisher's DOI landing page is still being updated.
+
+The paper PDF is stored at `docs/assets/TalkFlow_SIGGRAPH_Asia_2026.pdf` (12 pages). Upload that file to the `main` branch to activate the PDF preview and links. The website checks that the file exists before displaying the embedded viewer.
 
 ## Qualitative Video Comparisons
 
 Five complete side-by-side comparisons on BEAT2 are presented on the [project page](https://xinmuwang.github.io/TalkFlow/#videos). The original MP4 files include speech audio and embedded method names (TalkFlow, EchoMask, EMAGE, MambaTalk, and GT), so no extra labels are overlaid.
 
-The website loads the following full-resolution files from `docs/assets/videos/`: `2_scott_0_3_3.mp4`, `2_scott_0_5_5.mp4`, `2_scott_0_65_65.mp4`, `2_scott_0_103_103.mp4`, and `2_scott_0_111_111.mp4`. These MP4 files are 3600×1080 and use H.264 video with AAC audio. They are configured for fast-start playback without re-encoding. Upload all five into that directory before merging the website update.
+The website loads the following full-resolution files from `docs/assets/videos/`: `2_scott_0_3_3.mp4`, `2_scott_0_5_5.mp4`, `2_scott_0_65_65.mp4`, `2_scott_0_103_103.mp4`, and `2_scott_0_111_111.mp4`. These MP4 files are 3600×1080 and use H.264 video with AAC audio. They are configured for fast-start playback without re-encoding.
 
 ## Installation
 
