@@ -414,3 +414,46 @@ footer p {
   .video-card-header { padding: 4px 5px 9px; }
   .video-card-footer { padding: 10px 5px 4px; }
 }
+
+
+/* In-page conference paper PDF viewer */
+.paper-display {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.paper-actions[hidden],
+.paper-frame[hidden],
+.paper-status[hidden] {
+  display: none;
+}
+.paper-status {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  text-align: center;
+  color: var(--muted);
+}
+.paper-frame {
+  display: block;
+  width: 100%;
+  height: min(78vh, 900px);
+  min-height: 540px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+@media (max-width: 520px) {
+  .paper-frame {
+    min-height: 420px;
+    height: 65vh;
+  }
+}
