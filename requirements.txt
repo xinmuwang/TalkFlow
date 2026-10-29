@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+torch
+torchaudio
+torch-geometric
+soundfile
+librosa
+tqdm
+pytest
+nbformat
+gensim
+sentence-transformers
