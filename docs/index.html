@@ -41,7 +41,7 @@
 
       <!-- Publication and project resources -->
       <nav class="resource-links" aria-label="Project resources">
-        <a class="button active" href="https://doi.org/10.1145/3829340.3842366">Paper</a>
+        <a class="button active" href="#paper">Paper</a>
         <a class="button disabled" href="#" aria-disabled="true">arXiv · Coming Soon</a>
         <a class="button active" href="https://github.com/xinmuwang/TalkFlow">Code</a>
         
@@ -146,6 +146,50 @@
               transport in the learned motion latent space.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         Paper: inline browser PDF viewer, with a direct-download fallback
+         ============================================================ -->
+    <section class="section soft" id="paper" aria-labelledby="paper-title">
+      <div class="shell">
+        <h3 id="paper-title">Paper</h3>
+        <p class="section-intro">
+          Read the complete 12-page SIGGRAPH Asia 2026 conference paper
+          directly below. The PDF is available here while the publisher's
+          DOI landing page is being updated.
+        </p>
+
+        <div class="paper-display">
+          <div class="paper-actions" id="paper-actions" hidden>
+            <a class="button active"
+               href="assets/TalkFlow_SIGGRAPH_Asia_2026.pdf"
+               target="_blank" rel="noopener noreferrer">Open PDF ↗</a>
+            <a class="button"
+               href="assets/TalkFlow_SIGGRAPH_Asia_2026.pdf"
+               download="TalkFlow_SIGGRAPH_Asia_2026.pdf">Download PDF</a>
+          </div>
+
+          <p class="paper-status" id="paper-status" role="status">
+            Checking paper availability…
+          </p>
+
+          <iframe id="paper-frame"
+                  class="paper-frame"
+                  title="TalkFlow — SIGGRAPH Asia 2026 paper (12-page PDF)"
+                  loading="lazy"
+                  hidden>
+          </iframe>
+
+          <noscript>
+            <p class="paper-status">
+              JavaScript is needed for the inline preview.
+              <a href="assets/TalkFlow_SIGGRAPH_Asia_2026.pdf">Open the PDF directly</a>.
+            </p>
+          </noscript>
         </div>
       </div>
     </section>
@@ -273,7 +317,7 @@
         <div class="resource-list">
           <div>
             <strong>Paper</strong>
-            <span>View the paper via the official DOI link above.</span>
+            <span>Read the <a href="#paper">embedded conference paper</a> or open its PDF above. The DOI page is pending an update.</span>
           </div>
           <div>
             <strong>arXiv</strong>
@@ -320,6 +364,28 @@
       </p>
     </div>
   </footer>
+
+  <!-- Only display the PDF reader once its file is available on Pages. -->
+  <script>
+    (() => {
+      const pdfPath = "assets/TalkFlow_SIGGRAPH_Asia_2026.pdf";
+      const frame = document.getElementById("paper-frame");
+      const actions = document.getElementById("paper-actions");
+      const status = document.getElementById("paper-status");
+
+      fetch(pdfPath, { method: "HEAD", cache: "no-store" })
+        .then((response) => {
+          if (!response.ok) throw new Error("Paper PDF unavailable");
+          frame.src = pdfPath + "#toolbar=1&navpanes=0&view=FitH";
+          frame.hidden = false;
+          actions.hidden = false;
+          status.hidden = true;
+        })
+        .catch(() => {
+          status.textContent = "The conference paper PDF will appear here once it has been uploaded.";
+        });
+    })();
+  </script>
 
 </body>
 </html>
