@@ -370,3 +370,45 @@ footer p {
     border-radius: 10px;
   }
 }
+
+
+/* Five-method comparison videos: wide originals with responsive playback */
+.video-gallery {
+  display: grid;
+  gap: 28px;
+}
+.video-card {
+  min-width: 0;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.video-card-header,
+.video-card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.video-card-header { padding: 0 4px 10px; }
+.video-card-header h4 { margin: 0; }
+.video-card-header span,
+.video-card-footer { color: var(--muted); font-size: 0.87rem; }
+.video-card-footer { padding: 12px 4px 0; }
+.video-card-footer a { color: var(--blue); font-weight: 600; }
+.comparison-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 10 / 3;
+  background: #121820;
+  border-radius: 8px;
+}
+@media (max-width: 520px) {
+  .video-card { padding: 8px; }
+  .video-card-header { padding: 4px 5px 9px; }
+  .video-card-footer { padding: 10px 5px 4px; }
+}
