@@ -3,7 +3,7 @@
 **TalkFlow: Structured Latent Flow Matching for Speech Driven Holistic Motion Generation**  
 *SIGGRAPH Asia 2026 Conference Papers*
 
-[Project Page](https://xinmuwang.github.io/TalkFlow/) · [Paper (PDF)](https://xinmuwang.github.io/TalkFlow/assets/TalkFlow_SIGGRAPH_Asia_2026.pdf) · [Video Comparisons](https://xinmuwang.github.io/TalkFlow/#videos)
+[Project Page](https://xinmuwang.github.io/TalkFlow/) · [Paper (PDF)](https://xinmuwang.github.io/TalkFlow/assets/TalkFlow_SIGGRAPH_Asia_2026.pdf) · [arXiv](https://arxiv.org/pdf/2610.40972) · [Video Comparisons](https://xinmuwang.github.io/TalkFlow/#videos)
 
 TalkFlow generates coordinated body motion, hand gestures, and facial expressions from speech. This repository provides the implementation for BEAT2 data preparation, model training, motion reconstruction evaluation, and inference.
 
